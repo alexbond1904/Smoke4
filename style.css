@@ -124,10 +124,11 @@ h2, h3 {
     background-size: cover;
     vertical-align: middle;
     margin-right: 10px; /* Отступ для красоты */
-    left:-40px;
-    top: 50%; /* Центрируем по вертикали */
-    transform: translateY(-50%); /* Точный центр по вертикали */
+    left: -40px;
+    bottom: 10px; /* Выравниваем по нижней части текста */
+    transform: translateY(0); /* Убираем вертикальное смещение */
 }
+
 
 #hookah-menu::before {
     background-image: url('./img/icons/hookah.png');
