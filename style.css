@@ -29,24 +29,13 @@ body {
 
 
 
-#hookah-menu::before,
-#alkohol-free::before,
-#coctails::before,
-#snacks::before {
-    content: "";
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-size: cover;
-    margin-right: 10px;
-    vertical-align: middle;
-}
+
 
 
 @media (max-width: 768px) {
     .fixed-menu {
         width: 100%;
-        background-color: #ccc;
+        background-color: #000;
         position: fixed;
         bottom: 0;
         display: flex;
@@ -117,10 +106,27 @@ h1 {
 
 h2 {
     font-size: 1.6em;
+    position: relative;
 }
 
 h2, h3 {
     font-weight: 500;
+}
+
+#hookah-menu::before,
+#alkohol-free::before,
+#coctails::before,
+#snacks::before {
+    content: "";
+    position: absolute; /* Абсолютное позиционирование */
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 10px; /* Отступ для красоты */
+    left:-40px;
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Точный центр по вертикали */
 }
 
 #hookah-menu::before {
