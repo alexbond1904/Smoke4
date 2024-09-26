@@ -1,0 +1,195 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0 0 100px 0;
+    background-color: #000000;
+    background-image: url('./img/background.png'); /* Фон для мобильных устройств */
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    color: #fff;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.fixed-menu {
+    display: none;
+}
+
+
+
+#hookah-menu::before,
+#alkohol-free::before,
+#coctails::before,
+#snacks::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+    .fixed-menu {
+        width: 100%;
+        background-color: #000;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 55px;
+    }
+
+    .fixed-menu::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, rgba(163, 163, 163, 0), rgba(255, 255, 255, 0.3), rgba(163, 163, 163, 0));
+        position: absolute;
+        top: -2px;
+        left: 0;
+    }
+
+    .fixed-menu ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        min-height: 35px;
+        width: 90%;
+        padding: 15px 20px;
+        margin: 0;
+        list-style: none;
+    }
+
+    .fixed-menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .fixed-menu ul li img {
+        max-width: 35px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .fixed-menu ul li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+h2 {
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+#hookah-menu::before {
+    background-image: url('./img/icons/hookah.png');
+}
+
+#alkohol-free::before {
+    background-image: url('./img/icons/drinks.png');
+}
+
+#coctails::before {
+    background-image: url('./img/icons/coctail.png');
+}
+
+#snacks::before {
+    background-image: url('./img/icons/food.png');
+}
+
+
+.underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(163, 163, 163, 0), rgba(255, 255, 255, 0.8), rgba(163, 163, 163, 0));
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
+
+
+.menu-section {
+    width: 100%;
+    margin: 20px 0 0;
+    padding-left: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Легкие линии */
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+
+}
+
+.item-name {
+    color: white;
+}
+
+.item-price {
+    color: yellow;
+}
+
+h3 {
+    color: lightgray;
+    font-size: 1.5em;
+    margin: 0;
+}
