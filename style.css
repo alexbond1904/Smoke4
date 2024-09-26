@@ -116,7 +116,7 @@ h1 {
 
 h2 {
     padding-left: 20px;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 h2, h3 {
@@ -164,7 +164,6 @@ h2, h3 {
 .menu-section {
     width: 100%;
     margin: 20px 0 0;
-    padding-left: 20px;
 }
 
 .menu-item {
