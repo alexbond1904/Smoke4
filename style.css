@@ -52,6 +52,7 @@ body {
         display: flex;
         justify-content: center;
         min-height: 55px;
+        font-size: 0.9em;
     }
 
     .fixed-menu::before {
@@ -74,6 +75,7 @@ body {
         padding: 15px 20px;
         margin: 0;
         list-style: none;
+
     }
 
     .fixed-menu ul li {
@@ -86,7 +88,7 @@ body {
     }
 
     .fixed-menu ul li img {
-        max-width: 35px;
+        max-width: 32px;
         height: auto;
         margin-bottom: 5px;
     }
@@ -115,7 +117,6 @@ h1 {
 }
 
 h2 {
-    padding-left: 20px;
     font-size: 1.6em;
 }
 
@@ -170,7 +171,7 @@ h2, h3 {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    font-size: 1.4em;
+    font-size: 1.3em;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Легкие линии */
 }
 
